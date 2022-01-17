@@ -1,0 +1,7 @@
+
+jobs:
+
+- job: "Build"
+  steps:
+    - powershell: |
+        Write-Host "Building iOS"

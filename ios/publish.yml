@@ -1,0 +1,11 @@
+
+parameters:
+  - name: environment
+    type: string
+
+jobs:
+
+- job: "Publish"
+  steps:
+    - powershell: |
+        Write-Host "Publishing iOS - ${{ parameters.environmnet }}"
